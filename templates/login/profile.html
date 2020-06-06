@@ -1,0 +1,523 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+    {% load static %}
+		<title>Live It EveryDay</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+			<link rel="stylesheet"  href="{% static 'css/login/profile.css' %}" />
+		<style media="screen">
+		@import 'https://fonts.googleapis.com/css?family=Open+Sans:600,700';
+
+* {font-family: 'Open Sans', sans-serif;}
+
+.rwd-table {
+margin: auto;
+min-width: 300px;
+max-width: 100%;
+border-collapse: collapse;
+}
+
+.rwd-table tr:first-child {
+border-top: none;
+background: #428bca;
+color: #fff;
+}
+
+.rwd-table tr {
+border-top: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+background-color: #f5f9fc;
+}
+
+.rwd-table tr:nth-child(odd):not(:first-child) {
+background-color: #ebf3f9;
+}
+
+.rwd-table th {
+display: none;
+}
+
+.rwd-table td {
+display: block;
+}
+
+.rwd-table td:first-child {
+margin-top: .5em;
+}
+
+.rwd-table td:last-child {
+margin-bottom: .5em;
+}
+
+.rwd-table td:before {
+content: attr(data-th) ": ";
+font-weight: bold;
+width: 120px;
+display: inline-block;
+color: #000;
+}
+
+.rwd-table th,
+.rwd-table td {
+text-align: left;
+}
+
+.rwd-table {
+color: #333;
+border-radius: .4em;
+overflow: hidden;
+}
+
+.rwd-table tr {
+border-color: #bfbfbf;
+}
+
+.rwd-table th,
+.rwd-table td {
+padding: .5em 1em;
+}
+@media screen and (max-width: 301px) {
+.rwd-table tr:nth-child(2) {
+	border-top: none;
+}
+}
+
+
+@media screen and (min-width: 300px) {
+.rwd-table tr:hover:not(:first-child) {
+	background-color: #d8e7f3;
+}
+.rwd-table td:before {
+	display: none;
+}
+.rwd-table th,
+.rwd-table td {
+	display: table-cell;
+	padding: .25em .5em;
+}
+.rwd-table th:first-child,
+.rwd-table td:first-child {
+	padding-left: 0;
+}
+.rwd-table th:last-child,
+.rwd-table td:last-child {
+	padding-right: 0;
+}
+.rwd-table th,
+.rwd-table td {
+	padding: 0.4em !important;
+}
+}
+
+
+/* THE END OF THE IMPORTANT STUFF */
+
+/* Basic Styling */
+body {
+background: #4B79A1;
+background: -webkit-linear-gradient(to left, #4B79A1 , #283E51);
+background: linear-gradient(to left, #4B79A1 , #283E51);
+}
+h1 {
+text-align: center;
+font-size: 2.4em;
+color: #f2f2f2;
+}
+.container {
+display: block;
+text-align: center;
+}
+h3 {
+display: inline-block;
+position: relative;
+text-align: center;
+font-size: 1.5em;
+color: #cecece;
+}
+h3:before {
+content: "\25C0";
+position: absolute;
+left: -50px;
+-webkit-animation: leftRight 2s linear infinite;
+animation: leftRight 2s linear infinite;
+}
+h3:after {
+content: "\25b6";
+position: absolute;
+right: -50px;
+-webkit-animation: leftRight 2s linear infinite reverse;
+animation: leftRight 2s linear infinite reverse;
+}
+@-webkit-keyframes leftRight {
+0%    { -webkit-transform: translateX(0)}
+25%   { -webkit-transform: translateX(-10px)}
+75%   { -webkit-transform: translateX(10px)}
+100%  { -webkit-transform: translateX(0)}
+}
+@keyframes leftRight {
+0%    { transform: translateX(0)}
+25%   { transform: translateX(-10px)}
+75%   { transform: translateX(10px)}
+100%  { transform: translateX(0)}
+}
+
+/*
+	Don't look at this last part. It's unnecessary. I was just playing with pixel gradients... Don't judge.
+*/
+/*
+@media screen and (max-width: 601px) {
+.rwd-table tr {
+	background-image: -webkit-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+	background-image: -moz-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+	background-image: -o-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+	background-image: -ms-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+	background-image: linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+}
+.rwd-table tr:nth-child(odd) {
+	background-image: -webkit-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+	background-image: -moz-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+	background-image: -o-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+	background-image: -ms-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+	background-image: linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+}
+}*/
+
+/*start on off */
+.onoffswitch {
+		position: relative; width: 90px;
+		-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+		position: absolute;
+		opacity: 0;
+		pointer-events: none;
+}
+.onoffswitch-label {
+		display: block; overflow: hidden; cursor: pointer;
+		border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+		display: block; width: 200%; margin-left: -100%;
+		transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+		display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+		font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+		box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+		content: "ON";
+		padding-left: 10px;
+		background-color: #34A7C1; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+		content: "OFF";
+		padding-right: 10px;
+		background-color: #EEEEEE; color: #999999;
+		text-align: right;
+}
+.onoffswitch-switch {
+		display: block; width: 18px; margin: 6px;
+		background: #FFFFFF;
+		position: absolute; top: 0; bottom: 0;
+		right: 56px;
+		border: 2px solid #999999; border-radius: 20px;
+		transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+		margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+		right: 0px;
+}
+/* end on off*/
+
+
+
+
+		</style>
+		<script src="{% static 'js/jquery3.5.1.js' %}"></script>
+
+		<script type="text/javascript">
+      $(function() {
+
+		$("input[id^='myonoffswitch_']" ).change(function() {
+			var $this = $(this);
+			console.log('hi::',$(this).prop("checked"));
+			var passwd =$this.attr('passwd');
+			var usid=$this.attr('id').replace('myonoffswitch_','');
+			var data;
+		if($(this).prop("checked")==true) {
+			data = {
+				'user_id':usid,
+				'password':passwd,
+				'mark_attandance':true
+			};
+		}else{
+			data = {
+				'user_id':usid,
+				'password':passwd
+			};
+
+		}
+		$.ajax({
+			 url: '/api-auth/data/'+usid+'/',
+			 error: function() {
+
+			 },
+			 data: data,
+			 dataType: 'json',
+			 success: function(data) {
+				 console.log(data,usid);
+				 $('#mark_attandance_'+usid).text(data.mark_attandance.toString());
+				 // $('#mark_attandance_'+usid).val(data.mark_attandance);
+				 // $.each( data, function( key, value ) {
+				 // });
+
+			 },
+			 type: 'PUT'
+		});
+});
+
+{% if view_data %}
+   $.ajax({
+      url: '/api-auth/data/',
+      error: function() {
+
+      },
+      dataType: 'json',
+      success: function(data) {
+
+        $.each( data, function( key, value ) {
+            // alert(value.user_id+"|"+value.password );
+						if (value.mark_attandance == true){
+							$('#myonoffswitch_'+value.user_id).prop('checked',true);
+							$('#myonoffswitch_'+value.user_id).attr('passwd',value.password);
+						}
+						$("#password_table").append('<tr>	<td data-th="User Id">'+value.user_id+'</td><td data-th="Password">'+value.password+'</td><td data-th="Continuation" id="mark_attandance_'+value.user_id+'">'+value.mark_attandance+'</td></tr>');
+						// $("#password_table").append('<tr><td>UserId :</td><td>'+value.user_id+'</td></tr>');
+						// $("#password_table").append('<tr><td></td><td></td></tr>');
+						// $("#password_table").append('<tr><td>Password :</td><td>'+value.password+'</td></tr>');
+						// $("#password_table").append('<tr><td></td><td></td></tr>');
+        });
+				// $("#password_table").append(table);
+      },
+      type: 'GET'
+   });
+{% endif %}
+
+
+        $('.hamburger').click(function () {
+          showHideMobile();
+        });
+
+        $(".dimmer").click(function() {
+          showHideMobile();
+        });
+
+        $('li .icon-arrow').click(function () {
+          $(this).parent().parent().toggleClass('showSubmenu');
+        });
+      });
+
+      function showHideMobile() {
+
+        $(".hamburger").toggleClass('active');
+        $(".hamburger").parent('.menu').toggleClass('active');
+        $('.dimmer').toggleClass('active');
+        $('body').toggleClass('no-scrolling');
+				if($(".hamburger").hasClass('active')){
+					$("#checkss").hide();
+				}else {
+					$("#checkss").show();
+				}
+      }
+
+		</script>
+	</head>
+  	<body>
+      <header class="header">
+        <div class="logo"><span style="font-family: helvetica, arial, sans-serif;color: floralwhite;">Welcome Jaan</span>
+        </div>
+        <nav class="menu">
+          <ul>
+            <li><a href="/login/">HOME</a></li><!-- Getting rid of that annoying space at desktop size
+            --><li>
+              <div class="flexbox-container">
+                <a href="/login/passwd_edit/">PASSWORD EDIT</a>
+                <!-- <i class='icon-arrow'>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="120.6 59.5 612 359.1">
+                    <path fill="#fff" d="M715.7,163.2c-21.1,22.2-248,237.4-248,237.4c-11.6,11.6-26.3,18-41.2,18s-30.6-6.3-41.2-18
+                                         c0,0-225.9-215.2-248-237.4c-21.1-22.2-23.2-61.2,0-85.5c23.2-23.2,54.8-25.3,83.3,0l205.8,198.5l206-198.4
+                                         c28.5-25.3,60.1-23.2,83.3,0C738.8,102.1,737.8,141.1,715.7,163.2z"/>
+                  </svg>
+                </i> -->
+              </div>
+            </li><!--
+            --><li>
+              <div class="flexbox-container">
+                <a href="/login/attandance/">VIEW ATTANDANCE</a>
+                <!-- <i class='icon-arrow'>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="120.6 59.5 612 359.1">
+                    <path fill="#fff" d="M715.7,163.2c-21.1,22.2-248,237.4-248,237.4c-11.6,11.6-26.3,18-41.2,18s-30.6-6.3-41.2-18
+                                         c0,0-225.9-215.2-248-237.4c-21.1-22.2-23.2-61.2,0-85.5c23.2-23.2,54.8-25.3,83.3,0l205.8,198.5l206-198.4
+                                         c28.5-25.3,60.1-23.2,83.3,0C738.8,102.1,737.8,141.1,715.7,163.2z"/>
+                  </svg>
+                </i> -->
+              </div>
+            </li><!--
+            --><li>
+              <div class="flexbox-container">
+                <a href="/login/continuation/">EDIT CONTINUATION</a>
+                <!-- <i class='icon-arrow'>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="120.6 59.5 612 359.1">
+                    <path fill="#fff" d="M715.7,163.2c-21.1,22.2-248,237.4-248,237.4c-11.6,11.6-26.3,18-41.2,18s-30.6-6.3-41.2-18
+                                         c0,0-225.9-215.2-248-237.4c-21.1-22.2-23.2-61.2,0-85.5c23.2-23.2,54.8-25.3,83.3,0l205.8,198.5l206-198.4
+                                         c28.5-25.3,60.1-23.2,83.3,0C738.8,102.1,737.8,141.1,715.7,163.2z"/>
+                  </svg>
+                </i> -->
+              </div>
+            </li><!--
+            --><li><a href="/login/logout/">Log Out</a></li>
+          </ul>
+          <div class="hamburger"><span></span></div>
+          <div class="dimmer"></div>
+        </nav>
+      </header>
+    <section>
+      <br>
+      <br>
+      <center>
+        <div class="password_div">
+					{% if view_data %}
+					<div class="container">
+					<h1>Our Table</h1>
+					  <table class="rwd-table" id="password_table">
+					    <tbody>
+					      <tr>
+					        <th>User Id</th>
+					        <th>Password</th>
+					        <th>Continuation</th>
+					      </tr>
+					      <tr>
+					        <td data-th="User Id">
+					          UPS5005
+					        </td>
+					        <td data-th="Password">
+					          UPS
+					        </td>
+					        <td data-th="Continuation">
+					          ASDF19218
+					        </td>
+
+					      </tr>
+					    </tbody>
+					  </table>
+					</div>
+					{% endif %}
+					<br>
+					<br>
+        </div>
+				<!-- {% if show_atta and str_atta %}
+				<pre style="font-family: 'Open Sans', sans-serif;">{{str_atta}}</pre>
+				<br>
+				<br>
+				<pre style="font-family: 'Open Sans', sans-serif;">{{str_atta2}}</pre>
+				{% endif %} -->
+				{% if edit_passwd %}
+				<span style="font-family: helvetica, arial, sans-serif;color: floralwhite;">
+					<a href="/api-auth/data/20983/"><h1>Gauri</h1></a>
+				</span>
+				<br>
+				<br>
+				<span style="font-family: helvetica, arial, sans-serif;color: floralwhite;">
+					<a href="/api-auth/data/20977/"><h1>Niti</h1></a>
+				</span>
+				{% endif %}
+
+				{% if gauri_atta_data %}
+				<div class="container">
+				<h1>Gauri Table</h1>
+					<table class="rwd-table" id="password_table">
+						<tbody>
+							<tr>
+								{% for h in gauri_atta_data.th %}
+								<th>{{h}}</th>
+								{% endfor %}
+							</tr>
+							{% for d in gauri_atta_data.tr_all_data %}
+							<tr>
+								{% for k,v in d.items %}
+
+								<td data-th="{{k}}">
+									{{v}}
+								</td>
+
+								{% endfor %}
+							</tr>
+							{% endfor %}
+						</tbody>
+					</table>
+				</div>
+				{% endif %}
+
+				{% if niti_atta_data %}
+				<div class="container">
+				<h1>Niti Table</h1>
+					<table class="rwd-table" id="password_table">
+						<tbody>
+							<tr>
+								{% for h in niti_atta_data.th %}
+								<th>{{h}}</th>
+								{% endfor %}
+							</tr>
+							{% for d in niti_atta_data.tr_all_data %}
+							<tr>
+								{% for k,v in d.items %}
+
+								<td data-th="{{k}}">
+									{{v}}
+								</td>
+
+								{% endfor %}
+							</tr>
+							{% endfor %}
+						</tbody>
+					</table>
+				</div>
+				{% endif %}
+
+      </center>
+
+    </section>
+		{% if view_data %}
+		<center >
+			<div id="checkss">
+		<span style="font-family: helvetica, arial, sans-serif;color: floralwhite;">Niti : </span><div class="onoffswitch">
+<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch_20977" tabindex="0" >
+<label class="onoffswitch-label" for="myonoffswitch_20977">
+	<span class="onoffswitch-inner"></span>
+	<span class="onoffswitch-switch"></span>
+</label>
+	</div>
+		<br>
+		<br>
+		<span style="font-family: helvetica, arial, sans-serif;color: floralwhite;">Gauri : </span><div class="onoffswitch">
+<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch_20983"  tabindex="0" >
+<label class="onoffswitch-label" for="myonoffswitch_20983">
+	<span class="onoffswitch-inner"></span>
+	<span class="onoffswitch-switch"></span>
+</label>
+	</div>
+</center>
+{% endif %}
+
+
+
+
+<br>
+<br>
+</div>
+  </body>
+</html>

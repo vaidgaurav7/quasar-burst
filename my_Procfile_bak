@@ -1,0 +1,2 @@
+web: gunicorn heroku_django.wsgi
+clock: python clock.py

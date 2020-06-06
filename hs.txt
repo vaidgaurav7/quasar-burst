@@ -1,0 +1,732 @@
+    1  ls
+    2  vi /etc/default/grub 
+    3  apt-get install vim
+    4  vi /etc/default/grub 
+    5  reboot 
+    6  wget https://www.python.org/ftp/python/3.5.6/Python-3.5.6.tgz
+    7  tar xzf Python-3.5.6.tgz
+    8  cd Python-3.5.6
+    9  ./configure --enable-optimizations
+   10  make altinstall
+   11  python -v
+   12  python --version
+   13  make altinstall
+   14  ls /home/gaurav/.cache/pip/http
+   15  su -
+   16  passwd root 
+   17  su -
+   18  vi /etc/default/grub 
+   19  update-grub
+   20  apt install python3-pip
+   21  su -
+   22  atom\
+   23  atom
+   24  apt install net-tools 
+   25  ifconfig
+   26  sudo apt install net-tools
+   27  ls
+   28  x2goclient 
+   29  atom
+   30  python
+   31  x2goclient 
+   32  dpkg -i Downloads/elasticsearch-5.4.0.deb 
+   33  dpkg -i Downloads/kibana-5.3.1-amd64.deb 
+   34  reboot 
+   35  tar -xvf Downloads/elasticsearch-5.4.0.tar.gz 
+   36  ls
+   37  elasticsearch-5.4.0/bin/elasticsearch
+   38  export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64/bin/
+   39  echo $JAVA_HOME
+   40  elasticsearch-5.4.0/bin/elasticsearch
+   41  ps -few | grep elastic
+   42  sudo systemctl start elasticsearch.service
+   43  ps -aux | grep elastic
+   44  sudo systemctl start kibana.service
+   45  ps -aux | grep kibana
+   46  x2goclient 
+   47  netstat -lnp | grep 'elastic'
+   48  ps -aux | grep kibana
+   49  ps -aux | grep elastic
+   50  ls -ltrh
+   51  tar -xvf Downloads/sports.tar.gz 
+   52  ls 
+   53  cd sportfest_project/
+   54  ls
+   55  source venv/bin/activate
+   56  ls
+   57  cd event_pro/
+   58  ls
+   59  ./manage.py runserver
+   60  vi requirements.txt
+   61  pip install -r requirements.txt 
+   62  ./manage.py runserver
+   63  atom
+   64  ./manage.py runserver
+   65  ./manage.py createsuperuser
+   66  ./manage.py runserver
+   67  ls
+   68  deactivate 
+   69  ls
+   70  cd ..
+   71  ls
+   72  tar -cvf "tota_projects" sportfest_project/*
+   73  ls
+   74  tar -cvf "tota_projects.tar" sportfest_project/*
+   75  ls
+   76  tar -tvf tota_projects.tar 
+   77  ls
+   78  cp tota_projects.tar Downloads/
+   79  cd Downloads/
+   80  ls
+   81  tar -xvf tota_projects.tar 
+   82  ls -ltrh
+   83  cd sportfest_project/
+   84  cd ../..
+   85  ls 
+   86  vi /etc/elasticsearch/english_keywords.txt
+   87  ls /etc/elasticsearch/english_keywords.txt
+   88  x2goclient 
+   89  atom
+   90  x2goclient 
+   91  mkdir office_repo
+   92  cd office_repo/
+   93  ls
+   94  ssh-keygen 
+   95  vi /root/.ssh/id_rsa
+   96  vi /root/.ssh/id_rsa.pub 
+   97  git clone ssh://gauravvaid@gerrit.tradeindia.com:29418/ti-django
+   98  git clone https://gauravvaid@gerrit.tradeindia.com:8080/ti-django
+   99  x2goclient 
+  100  atom
+  101  python
+  102  x2goclient 
+  103  python3 -V
+  104  pip
+  105  pip --version
+  106  curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+  107  apt install curl
+  108  curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+  109  sudo apt-get install -y nodejs
+  110  sudo apt-get install gcc g++ make
+  111  curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+  112  node --version
+  113  npm --version
+  114  apt install -y python3-venv
+  115  mkdir environments
+  116  python3 -m venv logrocket_env
+  117  source logrocket_env/bin/activate
+  118  pip install django djangorestframework django-cors-headers
+  119  django-admin startproject django_react_proj
+  120  ls
+  121  cd django_react_proj/
+  122  ls
+  123  vi django_react_proj/settings.py 
+  124  python manage.py startapp students
+  125  ls
+  126  python manage.py startapp students
+  127  vi django_react_proj/settings.py 
+  128  python manage.py startapp students
+  129  vi django_react_proj/settings.py 
+  130  vi django_react_proj/
+  131  cd django_react_proj/
+  132  ls
+  133  cd ..
+  134  vi students/models.py 
+  135  python manage.py makemigrations
+  136  vi students/migrations/0001_initial.py
+  137  #python manage.py makemigrations --empty --name students students
+  138  vi students/migrations/0001_initial.py
+  139  python manage.py makemigrations --empty --name students students
+  140  vi students/migrations/0002_students.py
+  141  vi django_react_proj/students/migrations/
+  142  vi students/migrations/0002_students.py 
+  143  vi students/migrations/0001_students.py 
+  144  vi students/migrations/0001_initial.py 
+  145  vi students/migrations/0002_students.py 
+  146  python manage.py migrate
+  147  cd students/
+  148  vi serializers.py
+  149  cd ..
+  150  vi django_react_proj/urls.py 
+  151  vi students/views.py 
+  152  python ./manage.py runserver 
+  153  ls
+  154  python manage.py runserver
+  155  vi django_react_proj/urls.py 
+  156  fg
+  157  python manage.py runserver
+  158  vi django_react_proj/urls.py 
+  159  python manage.py runserver
+  160  vi students/views.py 
+  161  deactivate 
+  162  x2goclient 
+  163  shutdown 
+  164  x2goclient 
+  165  dpkg -i Downloads/teamviewer_12.0.224194_amd64.deb 
+  166  cd /tmp
+  167  wget https://download.teamviewer.com/download/linux/signature/TeamViewer2017.asc
+  168  sudo apt-key add TeamViewer2017.asc
+  169  sudo sh -c 'echo "deb http://linux.teamviewer.com/deb stable main" >> /etc/apt/sources.list.d/teamviewer.list'
+  170  sudo sh -c 'echo "deb http://linux.teamviewer.com/deb preview main" >> /etc/apt/sources.list.d/teamviewer.list'
+  171  apt update
+  172  apt install teamviewer
+  173  teamviewer 
+  174  ./tv-setup 
+  175  ./tv-setup checklibs
+  176  teamviewer
+  177  ls
+  178  ./teamviewer 
+  179  su -
+  180  cd
+  181  cd /tmp
+  182  wget https://download.teamviewer.com/download/linux/signature/TeamViewer2017.asc
+  183  sudo apt-key add TeamViewer2017.asc
+  184  sudo sh -c 'echo "deb http://linux.teamviewer.com/deb stable main" >> /etc/apt/sources.list.d/teamviewer.list'
+  185  apt update
+  186  apt install teamviewer
+  187  teamviewer
+  188  su - 
+  189  apt install gdebi
+  190  apt install /home/gaurav/Downloads/zoom_amd64.deb 
+  191  zoom 
+  192  python
+  193  apt install scrcpy
+  194  sudo snap install scrcpy
+  195  scrcpy
+  196  lsusb
+  197  scrcpy.adb devices
+  198  sudo apt install adb ffmpeg libsdl2-2.0.0 make gcc pkg-config meson ninja-build libavcodec-dev libavformat-dev libavutil-dev libsdl2-dev
+  199  scrcpy
+  200  sudo apt install kazam
+  201  kazam
+  202  apt install simplescreenrecorder
+  203  simplescreenrecorder 
+  204  x2goclient 
+  205  ls -ltrh
+  206  sudo install scrcpy-server-v1.12.1.jar /usr/local/bin/scrcpy-server.jar
+  207  mkdir scrcpy
+  208  tar -xvf Downloads/scrcpy-1.12.1.tar.gz 
+  209  ls -ltrh
+  210  tar -xvf Downloads/scrcpy-1.12.1.tar.gz .
+  211  cp -R Downloads/scrcpy-1.12.1 .
+  212  ls -ltrh
+  213  cp -r Downloads/scrcpy-1.12.1 .
+  214  ls -ltrh
+  215  cp Downloads/scrcpy-1.12.1.tar.gz .
+  216  ls -ltrh
+  217  tar -xvf scrcpy-1.12.1.tar.gz 
+  218  ls -ltrh
+  219  cd scrcpy
+  220  ls
+  221  cd .
+  222  cd ..
+  223  tar -tvf scrcpy-1.12.1.tar.gz 
+  224  tar -xvf scrcpy-1.12.1.tar.gz 
+  225  ls
+  226  cd
+  227  ls
+  228  rm -rf scrcpy/
+  229  mv scrcpy-1.12.1/ scrcpy/
+  230  ls
+  231  cd scrcpy/
+  232  ls
+  233  cd ../
+  234  ls
+  235  cd
+  236  ls
+  237  ls -ltrh
+  238  ls -lt
+  239  ls 
+  240  cd scrcpy
+  241  meson build --buildtype release --strip -Db_lto=true  -Dprebuilt_server=../scrcpy-server-v1.11.jar
+  242  cd build
+  243  ninja
+  244  cd
+  245  ls
+  246  ls -ltrh
+  247  pwd
+  248  cd -
+  249  ninja
+  250  vi ninja
+  251  type ninja
+  252  vi /usr/bin/ninja
+  253  cd ..
+  254  meson build --buildtype release --strip -Db_lto=true  -Dprebuilt_server=../scrcpy-server-v1.12.1.jar
+  255  meson configure
+  256  meson build --buildtype release --strip -Db_lto=true  -Dprebuilt_server=../scrcpy-server-v1.12.1.jar
+  257  cd build/
+  258  ninja 
+  259  cd 
+  260  cp Downloads/scrcpy-server-v1.11 
+  261  cp Downloads/scrcpy-server-v1.11 .
+  262  mv scrcpy-server-v1.11 scrcpy-server-v1.11.jar
+  263  sudo install scrcpy-server-v1.11.jar /usr/local/bin/scrcpy-server.jar
+  264  cd scrcpy
+  265  meson build --buildtype release --strip -Db_lto=true  -Dprebuilt_server=../scrcpy-server-v1.11.jar
+  266  cd build
+  267  ninja
+  268  sudo ninja install
+  269  scrcpy
+  270  adb kill-server
+  271  adb start-server
+  272  scrcpy
+  273  adb version
+  274  cd ..
+  275  ls -ltrh
+  276  rm -rf scrcpy scrcpy-server-v1.11.jar 
+  277  ls -ltrh
+  278  sudo install scrcpy-server-v1.12.1.jar /usr/local/bin/scrcpy-server.jar
+  279  tar -xvf scrcpy-1.12.1.tar.gz
+  280  ls -ltrh
+  281  ls 
+  282  mv scrcpy-1.12.1 scrcpy
+  283  ls 
+  284  cd scrcpy/
+  285  meson build --buildtype release --strip -Db_lto=true  -Dprebuilt_server=../scrcpy-server-v1.12.1.jar
+  286  cd build
+  287  ninja
+  288  sudo ninja install
+  289  scrcpy --help
+  290  adb kill-server
+  291  adb start-server
+  292  adb tcpip 5555
+  293  adb connect 192.168.1.103:5555
+  294  scrcpy
+  295  scrcpy --bit-rate 2M --max-size 800
+  296  adb kill-server
+  297  adb start-server
+  298  adb kill-server
+  299  adb start-server
+  300  scrcpy
+  301  python
+  302  vi hello.sh
+  303  ./hello.sh
+  304  chmod +x ./hello.sh
+  305  ./hello.sh
+  306  /usr/bin/sh 
+  307  /usr/bin/bash
+  308  echo $SHELL
+  309  vi hello.sh
+  310  ./hello.sh
+  311  crontab -l 
+  312  crontab -e
+  313  crontab -l 
+  314  crontab -e
+  315  tail -f my_log.log
+  316  touch my_log.log
+  317  tail -f my_log.log
+  318  pwd 
+  319  crontab -e
+  320  tail -f ./my_log.log 
+  321  vi my_log.log 
+  322  > ./my_log.log 
+  323  vi my_log.log 
+  324  crontab -e
+  325  vi my_log.log 
+  326  tail -f ./my_log.log 
+  327  echo $RANDOM
+  328  echo $[RANDOM%90]m
+  329  tail -f ./my_log.log 
+  330  cat ./my_log.log | wc -l
+  331  crontab -e
+  332  echo $[RANDOM%90]m
+  333  ${RANDOM:0:2}m
+  334  echo $[RANDOM%90]m
+  335  $(date +%s.%N)
+  336  $(date +%s)
+  337  echo $(date +%s)
+  338  echo $(date +%N)
+  339  echo $(date +%k%M)
+  340  echo `date`
+  341  echo date +"%D %T"
+  342  date +"%D %T"
+  343  date +"%Y-%m-%d %T"
+  344  date +”%d-%b-%Y %T”
+  345  date +"%d-%b-%Y %T"
+  346  crontab -e
+  347  ls -ltrh
+  348  crontab -e
+  349  vi hello.sh 
+  350  crontab -e
+  351  >my_log.log
+  352  crontab -e
+  353  tail -f ./my_log.log 
+  354  crontab -e
+  355  vi hello.sh 
+  356  >my_log.log
+  357  crontab -e
+  358  tail -f ./my_log.log 
+  359  date +"%d-%b-%Y %I:%M:%S %p"
+  360  date +"%d-%b-%Y %T"
+  361  crontab -e
+  362  vi hello.sh 
+  363  cur_date=date +"%d-%b-%Y %T"
+  364  $cur_date=date +"%d-%b-%Y %T"
+  365  $cur_date = date +"%d-%b-%Y %T"
+  366  cur_date=date+"%d-%b-%Y %T"
+  367  echo $cur_date
+  368  cur_date = date +"%d-%b-%Y %T"
+  369  echo date +"%d-%b-%Y %T"
+  370  date +"%d-%b-%Y %T"
+  371  cur_date = date +"%d-%b-%Y %T"
+  372  vi hello.sh 
+  373  cur_date=`date +"%d-%b-%Y %T"`
+  374  echo cur_date
+  375  echo $cur_date
+  376  vi hello.sh 
+  377  crontab -e
+  378  >my_log.log
+  379  tail -f ./my_log.log 
+  380  vi python_practice4.py
+  381  python python_practice4.py
+  382  vi python_practice4.py
+  383  python python_practice4.py
+  384  vi python_practice4.py
+  385  python python_practice4.py
+  386  vi python_practice4.py
+  387  python python_practice4.py
+  388  vi python_practice4.py
+  389  python python_practice4.py
+  390  vi python_practice4.py
+  391  python python_practice4.py
+  392  vi python_practice4.py
+  393  python python_practice4.py
+  394  vi python_practice4.py
+  395  python
+  396  cur_date=`date +"%d-%b-%Y %T"`
+  397  echo $cur_date
+  398  `date +%Y-%m`
+  399  cur=`date +%Y-%m`
+  400  echo $cur
+  401  cur=`date +%Y-%m-%d`
+  402  echo $cur
+  403  c=`date +%Y-%m-%d`
+  404  echo $c
+  405  cd build
+  406  cd scrcpy/build/
+  407  cd
+  408  x2goclient 
+  409  teamviewer
+  410  su -
+  411  x2goclient 
+  412  zoom
+  413  vi file:///opt/zoom/QtQuick/Controls/Private/Control.qml
+  414  apt install /home/gaurav/Downloads/slack-desktop-4.4.0-amd64.deb 
+  415  slack 
+  416  slack --no-sandbox
+  417  apt-get remove slack-desktop --purge
+  418  sudo snap install slack --classic
+  419  slack 
+  420  slack
+  421  x2goclient 
+  422  dpkg -i /home/gaurav/Downloads/slack-desktop-4.4.0-amd64.deb 
+  423  slack 
+  424  slack --no-sandbox
+  425  python
+  426  x2goclient 
+  427  su -
+  428  fluxgui 
+  429  su -
+  430  x2goclient 
+  431  fluxgui 
+  432  x2goclient 
+  433  scrcpy
+  434  adb kill-server
+  435  scrcpy
+  436  x2goclient 
+  437  teamviewer
+  438  x2goclient 
+  439  su -
+  440  apt-get remove x2goclient --purge
+  441  apt-get install x2goclient 
+  442  x2goclient 
+  443  zoom
+  444  x2goclient 
+  445  apt-get install nmap
+  446  ifconfig
+  447  ping  -b 192.168.1.255
+  448  nmap -sP 192.168.0.0/24
+  449  nmap -sn 192.168.1.0/24
+  450  nmap -sn 192.168.1.0/255
+  451  nmap -sn 192.168.1.0/25
+  452  sudo add-apt-repository ppa:elementary-os/stable
+  453  sudo apt-add-repository ppa:bablu-boy/nutty
+  454  sudo apt-get update
+  455  sudo apt-get install com.github.babluboy.nutty
+  456  x2goclient 
+  457  ls -ltrh
+  458  man POST 
+  459  ls -ltrh
+  460  ./PDFStudio_linux64.sh
+  461  su -
+  462  x2goclient 
+  463  python -m virtualenv /kivy_venv
+  464  source /kivy_venv/bin/activate
+  465  python -m pip install --upgrade pip wheel setuptools
+  466  python -m pip install docutils pygments pypiwin32 kivy.deps.sdl2 kivy.deps.glew
+  467  deactivate 
+  468  rm -rf /kivy_venv/
+  469  sudo add-apt-repository ppa:kivy-team/kivy
+  470  vi vim /etc/apt/sources.list
+  471  vim /etc/apt/sources.list
+  472  vi /etc/apt/sources.list.d/teamviewer.list
+  473  sudo add-apt-repository ppa:kivy-team/kivy
+  474  sudo apt-get update
+  475  sudo apt-get install python-kivy
+  476  apt-get remove --purge python-kivy
+  477  sudo apt-get install python3-kivy
+  478  sudo apt-get install kivy-examples
+  479  sudo snap install --classic heroku
+  480  heroku login
+  481  mkdir heroku-proj
+  482  cd heroku-proj/
+  483  git init
+  484  heroku git:remote -a quasar-burst
+  485  git st
+  486  git status
+  487  teamviewer
+  488  su -
+  489  x2goclient 
+  490  sudo apt install libpq-dev
+  491  git st
+  492  virtualenv --version
+  493  mkdir heroku_proj
+  494  python
+  495  python3.6.8
+  496  python3.6
+  497  python
+  498  python -m venv heroku_proj/
+  499  rm -rf heroku_proj/
+  500  python -m venv heroku_env
+  501  source heroku_env/bin/activate
+  502  ls
+  503  pip install django
+  504  mkdir heroku_django
+  505  cd heroku_django/
+  506  cd ../
+  507  rm -rf heroku_django
+  508  django-admin startproject heroku_django
+  509  cd heroku_django/
+  510  git st
+  511  git status
+  512  python manage.py migrate
+  513  python manage.py makemigrations
+  514  python manage.py createsuperuser
+  515  vi pass.txt
+  516  git st
+  517  ls
+  518  vi heroku_django/settings.py 
+  519  ./manage.py runserver 
+  520  git st
+  521  git status
+  522  cd ..
+  523  ls
+  524  cd -
+  525  git init
+  526  git st
+  527  git status 
+  528  pip freeze
+  529  pip freeze > requirements.txt
+  530  git status 
+  531  heroku login
+  532  git:remote -a "quasar-burst"
+  533  touch Procfile
+  534  vi Procfile 
+  535  pip install django-heroku
+  536  vi heroku_django/settings.py 
+  537  #pip freeze > requirements.txt
+  538  vi requirements.txt 
+  539  pip freeze > requirements.txt
+  540  vi requirements.txt 
+  541  git st
+  542  git status
+  543  heroku git:remote -a "quasar-burst"
+  544  git add .
+  545  git status
+  546  git reset HEAD .
+  547  git rm --cached heroku_django/__pycache__/__init__.cpython-36.pyc heroku_django/__pycache__/settings.cpython-36.pyc heroku_django/__pycache__/urls.cpython-36.pyc heroku_django/__pycache__/wsgi.cpython-36.pyc
+  548  git status
+  549  git commit -am "initial commit"
+  550  git config --global user.email "vaidgaurav7.com"
+  551  git config --global user.name "Gaurav Vaid"
+  552  git commit -am "initial commit"
+  553  git push heroku master 
+  554  vi requirements.txt 
+  555  git diff requirements.txt 
+  556  git add requirements.txt 
+  557  git commit --amend
+  558  EDITOR=vim
+  559  git commit --amend
+  560  export EDITOR=vim
+  561  git commit --amend
+  562  git push heroku master 
+  563  heroku open
+  564  heroku logs --tail
+  565  vi requirements.txt 
+  566  pip freeze
+  567  vi requirements.txt 
+  568  gunicorn 
+  569  pip install gunicorn
+  570  pip freeze
+  571  pip freeze > requirements.txt
+  572  vi requirements.txt 
+  573  git diff requirements.txt 
+  574  git add requirements.txt 
+  575  git commit --amend
+  576  git push heroku master 
+  577  git status
+  578  git reset --soft HEAD~
+  579  git pull
+  580  git-pull
+  581  git status
+  582  pip freeze > requirements.txt
+  583  vi requirements.txt 
+  584  git diff requirements.txt 
+  585  git add requirements.txt 
+  586  git commit
+  587  git status
+  588  git reflog
+  589  git reset HEAD~
+  590  git reset HEAD@{1}
+  591  git status
+  592  git diff
+  593  git commit -am "Second Commit"
+  594  git push heroku master 
+  595  heroku open
+  596  ./manage.py runserver 
+  597  git st
+  598  git status
+  599  atom
+  600  ./manage.py startapp portfolio
+  601  git st
+  602  git status
+  603  git add portfolio/
+  604  git st
+  605  git status
+  606  mkdir templates
+  607  mkdir templates/portfolio/index.html
+  608  touch templates/portfolio/index.html
+  609  mkdir templates/portfolio
+  610  touch templates/portfolio/index.html
+  611  vi templates/portfolio/index.html
+  612  cd static/css/portfolio/
+  613  ls
+  614  cp /home/gaurav/Downloads/theme/html5up-aerial/assets/css/fontawesome-all.min.css .
+  615  cp /home/gaurav/Downloads/theme/html5up-aerial/assets/css/noscript.css .
+  616  ls
+  617  cd ../../..
+  618  ./manage.py runserver 
+  619  cp /home/gaurav/Downloads/theme/html5up-aerial/assets/css/images/* static/css/portfolio/images/
+  620  cp -r /home/gaurav/Downloads/theme/html5up-aerial/assets/css/images/* static/css/portfolio/images/
+  621  ./manage.py runserver 
+  622  cp -r /home/gaurav/Downloads/theme/html5up-aerial/assets/webfonts/* static/css/webfonts/
+  623  ./manage.py runserver 
+  624  git st
+  625  git status
+  626  git add .
+  627  git status
+  628  vi .gitignore
+  629  git config --global core.excludesFile .gitignore
+  630  git status
+  631  git checkout .
+  632  git status
+  633  git reset HEAD .
+  634  git status
+  635  git add .
+  636  git status
+  637  git commit -am "third commit"
+  638  git push heroku master 
+  639  git status
+  640  git add .
+  641  git commit -am "forth commit"
+  642  git push heroku master 
+  643  heroku open
+  644  git st
+  645  git status
+  646  deactivate 
+  647  x2goclient 
+  648  cd heroku_django/
+  649  ls
+  650  heroku login
+  651  git st
+  652  git status
+  653  source ../heroku_env/bin/activate
+  654  pip freeze
+  655  pip install apscheduler
+  656  pip freeze
+  657  pip freeze > requirements.txt 
+  658  git diff requirements.txt 
+  659  vi requirements.txt 
+  660  git add requirements.txt 
+  661  git diff --cached
+  662  git status
+  663  ls -ltrh
+  664  vi clock.py
+  665  vi Procfile 
+  666  git status
+  667  git add .
+  668  git 
+  669  git show
+  670  git status
+  671  git commit 
+  672  export EDITOR=vim
+  673  git commit 
+  674  git push heroku master 
+  675  heroku ps:scale clock=1
+  676  vi clock.py 
+  677  apt  install tree
+  678  source heroku_env/bin/activate
+  679  cd heroku_django/
+  680  git st
+  681  git status
+  682  tree
+  683  git status
+  684  vi clock.py 
+  685  git status
+  686  deactivate 
+  687  cd 
+  688  source heroku_env/bin/activate
+  689  cd heroku_django/
+  690  git status
+  691  ./manage.py runserver 
+  692  atom
+  693  ./manage.py runserver 
+  694  source heroku_env/bin/activate
+  695  cd heroku_django/
+  696  ./manage.py runserver 
+  697  atom
+  698* 
+  699  ./manage.py startapp login
+  700  ./manage.py runserver 
+  701  ./manage.py startapp eshopper
+  702  cp /home/gaurav/Downloads/Eshopper/js/* static/js/eshopper/
+  703  cp /home/gaurav/Downloads/Eshopper/css/* static/css/eshopper/
+  704  ./manage.py runserver 
+  705  cp /home/gaurav/Downloads/Eshopper/fonts/* static/css/eshopper/webfonts/
+  706  ./manage.py runserver 
+  707  cp /home/gaurav/Downloads/Eshopper/images/home/girl*  static/images/eshopper/
+  708  ./manage.py runserver 
+  709  cp /home/gaurav/Downloads/Eshopper/images/home/map.png static/images/eshopper/
+  710  cp /home/gaurav/Downloads/Eshopper/images/home/pricing.png static/images/eshopper/
+  711  ./manage.py runserver 
+  712  cp /home/gaurav/Downloads/Eshopper/images/home/shipping.jpg static/images/eshopper/
+  713  cp /home/gaurav/Downloads/Eshopper/images/home/searchicon.png static/images/eshopper/
+  714  ./manage.py runserver 
+  715  git st
+  716  git status
+  717  heroku login
+  718  git status
+  719  hsitory
+  720  history
+  721  history > histo.txt
+  722  vi histo.txt 
+  723  ./manage.py runserver 
+  724  git status
+  725  tar -cvf "heroku_django.tar" test_script.py templates/login/ templates/eshopper/ templates/base.html static/js/ static/images/ static/css/login/ static/css/eshopper/ login/ histo.txt eshopper/ apis/ db.sqlite334343 templates/portfolio/index.html heroku_django/urls.py heroku_django/settings.py heroku_django/__pycache__/urls.cpython-36.pyc heroku_django/__pycache__/settings.cpython-36.pyc db.sqlite3
+  726  git status
+  727  cp heroku_django.tar /home/gaurav/
+  728  git status
+  729  git stash save -u
+  730  git status
+  731  vi history
+  732  history > hs.txt
